@@ -1,0 +1,21 @@
+\begin{align} 
+    & \min 
+    & & \sum_{ i \in centros  } \sum_{ j \in armazens  } custo\_transporte_{i,j} x_{i,j} & \label{obj:unknown_objetivo} \\ 
+    & \text{s.t.} 
+    & & x[C1,W1] + x[C2,W1] + x[C3,W1] = 112000 & \label{con:unknown_rest_demanda} \\ 
+    & & x[C1,W2] + x[C2,W2] + x[C3,W2] = 85000 & \label{con:unknown_rest_demanda} \\ 
+    & & x[C1,W3] + x[C2,W3] + x[C3,W3] = 138000 & \label{con:unknown_rest_demanda} \\ 
+    & & x[C1,W4] + x[C2,W4] + x[C3,W4] = 146000 & \label{con:unknown_rest_demanda} \\ 
+    & & x[C1,W5] + x[C2,W5] + x[C3,W5] = 77000 & \label{con:unknown_rest_demanda} \\ 
+    & & x[C1,W6] + x[C2,W6] + x[C3,W6] = 89000 & \label{con:unknown_rest_demanda} \\ 
+    & & x[C1,W7] + x[C2,W7] + x[C3,W7] = 101000 & \label{con:unknown_rest_demanda} \\ 
+    & & x[C1,W8] + x[C2,W8] + x[C3,W8] = 215000 & \label{con:unknown_rest_demanda} \\ 
+    & & x[C1,W9] + x[C2,W9] + x[C3,W9] = 53000 & \label{con:unknown_rest_demanda} \\ 
+    & & x[C1,W10] + x[C2,W10] + x[C3,W10] = 49000 & \label{con:unknown_rest_demanda} \\ 
+    & & x[C1,W11] + x[C2,W11] + x[C3,W11] = 153000 & \label{con:unknown_rest_demanda} \\ 
+    &&& x[C1,W1] + x[C1,W2] + x[C1,W3] + x[C1,W4] + x[C1,W5] + x[C1,W6] + x[C1,W7] + x[C1,W8] + x[C1,W9] + x[C1,W10] + x[C1,W11] \leq 500000 & \label{con:unknown_rest_oferta} \\ 
+    &&& x[C2,W1] + x[C2,W2] + x[C2,W3] + x[C2,W4] + x[C2,W5] + x[C2,W6] + x[C2,W7] + x[C2,W8] + x[C2,W9] + x[C2,W10] + x[C2,W11] \leq 750000 & \label{con:unknown_rest_oferta} \\ 
+    &&& x[C3,W1] + x[C3,W2] + x[C3,W3] + x[C3,W4] + x[C3,W5] + x[C3,W6] + x[C3,W7] + x[C3,W8] + x[C3,W9] + x[C3,W10] + x[C3,W11] \leq 400000 & \label{con:unknown_rest_oferta} \\ 
+    & \text{w.b.} 
+    & &  0 \leq x & \qquad \in \mathds{Z}_{\geq 0} \label{con:unknown_x_bound} 
+\end{align} 
